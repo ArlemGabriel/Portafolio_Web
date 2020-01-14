@@ -1,11 +1,13 @@
-body {
-    background: url('https://images.hdqwalls.com/wallpapers/forset-landscape-artwork-8k-u0.jpg') no-repeat center center fixed;
+
+#index_body {
+    background: url('https://hdqwalls.com/wallpapers/bridge-in-forest-minimalist-4k-w7.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     font-family: 'Dosis', sans-serif;
   }
+
 .myBackground {
     background-color: rgba(255,255,255, 0.5);
     color: inherit;
@@ -18,3 +20,87 @@ body {
     width:58px;
     height:58px;
 }
+
+
+hr.divider {
+    padding: 2px;
+    border: none;
+    border-bottom: 5px double #fafffc;
+    color: #fafffc;
+    text-align: center;
+    margin: 15px;
+  }
+  
+  hr.divider:after {
+    display: inline-block;
+    position: relative;
+    top: -0.1em;
+    font-size: 2.0em;
+    padding: 0 0.5em;
+    font-weight: normal;
+  }
+  
+  .blue-bg {
+    background-color: rgba(32, 120, 155, 0);
+  }
+
+  #div-divider{
+    height: 75%;
+    width: 100%;
+    padding: 25px 0px;
+  }
+
+  .portfolio {
+    background-color: white;
+    margin-bottom: -30px;
+  }
+  
+  .portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 30px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(32, 120, 155, 0.356);
+  }
+  
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem;
+  }
+  
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+  
+  .portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: rgba(32, 120, 155, 0);
+    opacity: 1;
+  }
+  

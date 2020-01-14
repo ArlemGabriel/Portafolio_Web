@@ -12,16 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
     <link href="CSS/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700&display=swap" rel="stylesheet"> 
 
 </head>
 
-<body>
+<body id = "index_body">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(155, 32, 32)">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(32, 120, 155)">
         <div class="container">
         <a class="navbar-brand" href="#">Desarrollo de Páginas Web</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Tareas
+                <a class="nav-link" href="#">Inicio
                 <span class="sr-only">(current)</span>
                 </a>
             </li>
@@ -44,96 +43,160 @@
                 <a class="nav-link" href="#">Laboratorios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Mi</a>
+                <a class="nav-link" href="#">Tareas</a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
+      <!-- Masthead -->
+  <header class="masthead text-white text-center" style="background-color: rgba(32, 120, 155, 0.445)">
+    <div class="container d-flex align-items-center flex-column">
 
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="RES/avatar.svg" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Arlem Gabriel Brenes Aguilar</h1>
+
+      <div id="div-divider" class="blue-bg">
+        <hr class="divider">
+      </div>
+
+      <!-- Masthead Subheading -->
+      <h4><p class="masthead-subheading font-weight-light mb-5">Estudiante - Ingeniero - Músico</p></h4>
+
+    </div>
+  </header>
   <!-- Page Content -->
   <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4 row">
-        
-          <div class="col-lg-6 col-md-6 mb-4">
-            <h1 class="display-3">Tareas</h1>
-            <h6 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</h6>
-          </div>
-    </header>
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
 
-    <!-- Page Features -->
-    <div class="row text-center">
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary pb-3 mb-0 pt-3">Portafolio</h2>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Tarea #1</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-outline-danger">Abrir Tarea</a>
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/ic_investigacion.png" alt="">
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Tarea #2</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-outline-danger">Abrir Tarea</a>
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/ic_tarea.png" alt="">
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Tarea #3</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-outline-danger">Abrir Tarea</a>
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/circus.png" alt="">
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Tarea #4</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-outline-danger">Abrir Tarea</a>
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/game.png" alt="">
           </div>
         </div>
+
+        <!-- Portfolio Item 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/safe.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="RES/submarine.png" alt="">
+          </div>
+        </div>
+
       </div>
+      <!-- /.row -->
 
     </div>
-    <!-- /.row -->
+  </section>
+ <!-- About Section -->
+ <section class="page-section bg-primary text-white mb-5 mt-4" id="about">
+  <div class="container">
+
+    <!-- About Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-white pt-4">Acerca de Mí</h2>
+
+    <!-- About Section Content -->
+    <div class="row pb-4">
+      <div class="col-lg-4 ml-auto">
+        <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+      </div>
+      <div class="col-lg-4 mr-auto">
+        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   </div>
 
   <!-- Footer -->
-  <footer class="py-5" style="background-color: rgba(177, 30, 30, 0.822)">
-    <div class="container">
-      <p class="m-0 text-center text-white">©Tecnológico de Costa Rica, 2019-2020</p>
-    </div>
+  <footer class="py-5" style="background-color: rgba(32, 120, 155, 0.822)">
     <div class="container">
         <p class="m-0 text-center text-white">
             <a href="https://www.facebook.com/arlemgabriel.brenesaguilar">
                 <img src="RES/iconfb.png" alt="Icono Facebook" width="200" height="200" class="iconfb">
             </a>
         </p>
+      </div>
+      <div class="container">
+        <p class="m-0 text-center text-white">
+            Íconos por
+            <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> de <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </p>
+      </div>
+      <div class="container">
+        <p class="m-0 text-center text-white">©Tecnológico de Costa Rica, 2019-2020</p>
       </div>
 
     <!-- /.container -->
